@@ -1,0 +1,8 @@
+{
+  "name": "HRPI - Human Rights Protection International",
+  "description": "Professional platform for Human Rights Protection International (HRPI), dedicated to promoting Human Rights, Rule of Law, Environment, and Democracy. Submit your issues and stay updated with global rights news.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

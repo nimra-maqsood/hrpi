@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Anton", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  
+  --color-hrpi-blue: #0EA5E9;
+  --color-hrpi-green: #10B981;
+}
+
+@layer base {
+  body {
+    @apply antialiased text-slate-900 bg-white;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-8 py-4 rounded-2xl font-bold transition-all shadow-xl flex items-center justify-center gap-2;
+  }
+}
+
+/* Custom animations */
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spin 12s linear infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+.text-gradient-blue-green {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-hrpi-blue to-hrpi-green;
+}
